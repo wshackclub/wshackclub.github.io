@@ -35,16 +35,6 @@
             font-size: 1.2rem;
             margin-bottom: 20px;
         }
-        .newsletter {
-            display: flex;
-            gap: 10px;
-        }
-        input[type="email"] {
-            padding: 10px;
-            border: none;
-            border-radius: 6px;
-            flex: 1;
-        }
         button {
             padding: 10px 20px;
             border: none;
@@ -53,6 +43,14 @@
             color: white;
             cursor: pointer;
             font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        button img {
+            width: 20px;
+            height: 20px;
         }
         button:hover {
             background: #45a049;
@@ -93,10 +91,9 @@
     <div class="container">
         <h1>Coming Soon</h1>
         <p>We're working hard to bring you something amazing. Stay tuned!</p>
-        <form class="newsletter">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Notify Me</button>
-        </form>
+        <button onclick="location.href='access_form.html'">
+            <img src="https://icons.hackclub.com/api/icons/white/post-fill" alt="Interest Form"> Expressions of Interest
+        </button>
         <div class="links">
             <a href="https://github.com/wshackclub" target="_blank" title="GitHub">
                 <img src="https://icons.hackclub.com/api/icons/white/github" alt="GitHub">
