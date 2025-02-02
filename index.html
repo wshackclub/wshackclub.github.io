@@ -57,11 +57,34 @@
         button:hover {
             background: #45a049;
         }
+        .links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+        .links a:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
         footer {
             margin-top: 20px;
             font-size: 0.9rem;
         }
     </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -71,8 +94,16 @@
             <input type="email" placeholder="Enter your email" required>
             <button type="submit">Notify Me</button>
         </form>
+        <div class="links">
+            <a href="https://github.com/wshackclub" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://hackclub.com" target="_blank" title="Hack Club">
+                <i class="fas fa-globe"></i>
+            </a>
+        </div>
         <footer>
-            &copy; 2025 Your Company Name. All rights reserved.
+            &copy; 2025 Western Suburbs Hack Club. All rights reserved.
         </footer>
     </div>
 </body>
